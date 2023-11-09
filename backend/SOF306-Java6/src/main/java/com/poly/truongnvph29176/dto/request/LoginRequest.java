@@ -15,9 +15,9 @@ import lombok.Setter;
 @Builder
 @Data
 public class LoginRequest {
-    @NotBlank(message = "Username không được để trống")
-    private String username;
+    @NotBlank(message = "Gmail không được để trống")
+    private String gmail;
 
-    @NotBlank(message = "Username không được để trống")
+    @NotBlank(message = "Password không được để trống")
     private String password;
 }

@@ -1,9 +1,9 @@
 package com.poly.truongnvph29176.service.impl;
 
 import com.poly.truongnvph29176.dto.request.AccountRequest;
+import com.poly.truongnvph29176.dto.request.LoginRequest;
 import com.poly.truongnvph29176.dto.response.AccountResponse;
 import com.poly.truongnvph29176.entity.Account;
-import com.poly.truongnvph29176.entity.Role;
 import com.poly.truongnvph29176.exception.DataNotFoundException;
 import com.poly.truongnvph29176.repository.AccountRepository;
 import com.poly.truongnvph29176.service.AccountService;
@@ -67,6 +67,16 @@ public class AccountServiceImpl implements AccountService {
         existingAccount.setEmail(accountRequest.getEmail());
         existingAccount.setPhoto(accountRequest.getPhoto());
         return accountRepository.save(existingAccount);
+    }
+
+    @Override
+    public String login(LoginRequest loginRequest) {
+        return null;
+    }
+
+    @Override
+    public String verifyAccount(String email, String otp) {
+        return null;
     }
 
     @Override

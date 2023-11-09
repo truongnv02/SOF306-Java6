@@ -56,6 +56,10 @@ public class SecurityConfig {
 
                             .requestMatchers(String.format("%s/accounts/**", apiPrefix)).permitAll()
 
+                            .requestMatchers(String.format("%s/roles/**", apiPrefix)).permitAll()
+
+                            .requestMatchers(String.format("%s/authorities/**", apiPrefix)).permitAll()
+
                             .requestMatchers(String.format("%s/categories/**", apiPrefix)).permitAll()
 
                             .requestMatchers(String.format("%s/products/**", apiPrefix)).permitAll()

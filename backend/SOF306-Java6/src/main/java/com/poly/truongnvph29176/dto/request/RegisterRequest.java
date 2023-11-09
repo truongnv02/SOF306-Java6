@@ -31,6 +31,4 @@ public class RegisterRequest {
 
     @NotBlank(message = "Photo Không được để trống")
     private String photo;
-
-    private String roleId;
 }
